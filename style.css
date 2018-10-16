@@ -36,7 +36,7 @@
 }
 
 p {
-    width: 30%;
+    width: 50%;
     margin: 0 auto;
     font-size: 24px;
 }
@@ -47,4 +47,29 @@ body {
 
 h1 {
     font-size: 48px;
+}
+
+#head {
+    display: none;
+}
+
+#Website {
+    display:none;
+}
+
+#return {
+    height: 50px;
+    width: 200px;
+    outline: none;
+    margin-top: 10%;
+    background-color: #f45342;
+    border: none;
+    color: #343d2c;
+    font-family: Arial, serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+	border-radius: 8px;
 }
