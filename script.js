@@ -114,7 +114,7 @@ function upLevel(source) {
         } else if (points > 2) {
             testi.innerHTML = "You found a good bit of valuable information on your author. However, there still may be more information out there for the next researcher to find. Your researching time has come to an end, but you have provided a great starting point with information and resources for the next person to continue your work. Take this time to reflect on your process and everything you learned. What do you think worked well? What do you think you could have done better? How can you use what you learned during this process for future projects? Whatever the answers may be, the important thing is that you finished, and you did great work. Congratulations!"
         } else {
-            testi.innerHTML = "Missing Nothing Testimonial."
+            testi.innerHTML = "Little to nothing - WOOHOO!!!! You got uh,,,,, little to nothing in terms of information!!! But H E Y. This was a possible outcome, and your lack of success does not reflect your effort whatsoever. Sometimes, the author is simply too elusive, and that is totally okay! If anything, you are extra diligent for continuously searching, persevering, and not giving up in such unsuccessful times. Therefore, major creds to you, my dude! Now, with these results, since there is not any info to go into making a Wikipedia Article or Baldwin Biography, we suggest you use the alternate options to complete the project such as the list of failed sources, and the archived correspondences. Great job again, every little tidbit of info helps so much!";
         }
         document.getElementById('Website').style.display = "inline-block";
         document.getElementById('head').style.display = "none";
@@ -210,7 +210,7 @@ function changeTest(source) {
             testi.innerHTML = "Sample Some Info Other Testimonial."
             points++;
         } else if (rand == 2) {
-            testi.innerHTML = "Sample A Lot of Info Testimonial."
+            testi.innerHTML = "When I began my research, a quick Google search proved to be an unsuccessful step.  However, as I learned more about the techniques of research, I refined my general searches, this time with more luck.  I stumbled across an article from UCDavis; the only article I found already written about my author.  From the article, I learned alternative pen names my author used, the year she was born and died, name of a few relatives also involved in the world of literature, and the publishing company she used.  This article was extremely useful and gave me many open ends to follow up on with additional research."
             points += 2;
         }
     }
