@@ -204,14 +204,7 @@ function changeTest(source) {
         }
     } else if(source == "Other" || source == "Other Source") {
         intro.innerHTML = "You have chosen to use other. When doing research, you never know what kind of source you can expect you find, and sometimes the answer may surprise you. Other sources include chat forums, articles, books, photos and more. You may find information that you can find nowhere else by using other."
-        if (rand == 0) {
-            testi.innerHTML = "Sample No Info Other Testimonial."
-        } else if (rand == 1) {
-            testi.innerHTML = "Sample Some Info Other Testimonial."
-            points++;
-        } else if (rand == 2) {
-            testi.innerHTML = "When I began my research, a quick Google search proved to be an unsuccessful step.  However, as I learned more about the techniques of research, I refined my general searches, this time with more luck.  I stumbled across an article from UCDavis; the only article I found already written about my author.  From the article, I learned alternative pen names my author used, the year she was born and died, name of a few relatives also involved in the world of literature, and the publishing company she used.  This article was extremely useful and gave me many open ends to follow up on with additional research."
-            points += 2;
-        }
+        testi.innerHTML = "When I began my research, a quick Google search proved to be an unsuccessful step.  However, as I learned more about the techniques of research, I refined my general searches, this time with more luck.  I stumbled across an article from UCDavis; the only article I found already written about my author.  From the article, I learned alternative pen names my author used, the year she was born and died, name of a few relatives also involved in the world of literature, and the publishing company she used.  This article was extremely useful and gave me many open ends to follow up on with additional research."
+        points += rand;
     }
 }
