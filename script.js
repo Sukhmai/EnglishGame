@@ -6,6 +6,7 @@ var points = 0;
 start.onclick = function() {
     start.style.display = "none";
     vid.style.display = "none";
+    document.getElementById('direct').style.display = "block";
     displayButtons(3, ["Email","Google Books","Ancestry"]);
 }
 
@@ -39,6 +40,7 @@ navButtons[5].onclick = function() {
 }
 function upLevel(source) {
     document.getElementById('head').style.display = "inline-block";
+    document.getElementById('direct').innerHTML = "Pick Your Next Source";
     changeTest(source);
     if (level == 1) {
         if (source == "Google Books") {
@@ -108,6 +110,7 @@ function upLevel(source) {
         var intro = document.getElementById('Intro');
         intro.innerHTML = "";
         var testi = document.getElementById('Testi');
+        document.getElementById('direct').style.display = "none";
         if (points > 6) {
             testi.innerHTML = "CONGRATULATIONS! You successfully uncovered a lot of information about the author you were researching.  At times, the task of finding new information may have seemed impossible, but you persevered.  Often times in research such as this, no information can be found and there is a bit of luck involved, but other times it takes a dedicated person to continue to push through and research.  Because you used many of the different resources at your disposal, your research attempt was thorough and you were able to piece together many small pieces of information and learn a significant amount about your author.  This is a huge accomplishment and something you should be very proud of! At this point, now that the research task is completed (for now, because research is never fully over), we would suggest writing either a Wikipedia article or a Baldwin Biography.  Again congratulations on your research project!"
 
@@ -127,9 +130,9 @@ function changeTest(source) {
     var testi = document.getElementById('Testi');
     var rand = Math.floor(Math.random() * Math.floor(3));
     if(source == "WorldCat") {
-        intro.innerHTML = "You have chosen to use WorldCat. WorldCat is an online database that catalogues the contents of 72,000 libraries from over 170 countries. It is currently the world's largest bibliographic database el. You might find the location of a book of your author on here, or perhaps some document recording their birth, death or marriage.";
+        intro.innerHTML = "You have chosen to use WorldCat. WorldCat is an online database that catalogues the contents of 72,000 libraries from over 170 countries. It is currently the world's largest bibliographic database. You might find the location of a book of your author on here, or perhaps some document recording their birth, death or marriage.";
         if (rand == 0) {
-            testi.innerHTML = "I got advice from the awesome class to try the website “WorldCat.” But this is also one of the websites that I had no success with. I tried searching up my author's name both Louisa and Louise M. Budgen which was written differently in other sites I found. But in this site, my author is not listed in the database. But a similar name showed up which could be a clue. I did also search up the titles of one of the books but only a reprint of the book which doesn't mean anything related to my author Ms. Budgen."
+            testi.innerHTML = "I got advice from the awesome class to try the website 'WorldCat.' But this is also one of the websites that I had no success with. I tried searching up my author's name both Louisa and Louise M. Budgen which was written differently in other sites I found. But in this site, my author is not listed in the database. But a similar name showed up which could be a clue. I did also search up the titles of one of the books but only a reprint of the book which doesn't mean anything related to my author Ms. Budgen."
 
         } else if (rand == 1) {
             testi.innerHTML = "I had seen several other students use WorldCat and find something about their author, but because I had already found a lot of information about my author through other means, I did not use WorldCat till towards the end. I simply searched the database for the name of my author: Frances Thurtle, and found several of her books, some of which I did not know she wrote. Some were scanned in full, so I was able to see some of the illustrations used in her books. Others were only available in hard copy, and because of time constraints, I did not get to see them. Nonetheless, another researcher might be able to use this knowledge and get to see the hard copy books. In the end, WorldCat gave me some supplemental information, such as publication dates and illustrations, but the crux of the information was not found there."

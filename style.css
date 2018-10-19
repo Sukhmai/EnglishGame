@@ -73,3 +73,8 @@ h1 {
     cursor: pointer;
 	border-radius: 8px;
 }
+
+#direct {
+    font-size: 24px;
+    display: none;
+}
